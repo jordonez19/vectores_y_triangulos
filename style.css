@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    background: linear-gradient(193deg, #bfbfbf, #342d33);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 8s ease infinite;
+    -moz-animation: AnimationName 8s ease infinite;
+    animation: AnimationName 8s ease infinite;
+}
+body{
+    height: 100vh;
+    width: 80vw;
+    margin: 0 auto;
+    
+}
+
+.container{
+    display: flex;
+    position: relative;
+    height: 100vh;
+}
+canvas{
+    border: solid rgb(211, 210, 210) 2px;
+    padding: 35px;
+    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+}
+.form-container{
+    width: 55vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+}
+.chart-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 45vw;
+}
+
+.container-input{
+    margin: 15px 0;
+
+}
+input{
+    border: none;
+    border-bottom: solid 3px  #fff;
+    text-align: center;
+    font-size: 18px;
+    color:#fff;
+    background-color: transparent;
+    outline:none;
+}
+input:active{
+    border: none;
+    outline:none;
+    }
+input::placeholder{
+    color:#fff;
+    }
+.btn{
+    padding: 10px 25px;
+    border: #fff solid;
+    border-radius: 15px;
+    color:#fff;
+    font-weight: 900;
+    font-size: 18px;
+}
+
+.btn:hover{
+    margin: 2px  3px ;
+    padding: 8px 22px;
+    cursor: pointer;
+}
+
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 71%}
+    50%{background-position:100% 30%}
+    100%{background-position:0% 71%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 71%}
+    50%{background-position:100% 30%}
+    100%{background-position:0% 71%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 71%}
+    50%{background-position:100% 30%}
+    100%{background-position:0% 71%}
+}
+
+@media screen and (max-width: 900px){
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 35px;
+    }
+    body{
+        width: 100vw;
+        height: 130vh;
+
+    }
+    .btn {
+        padding: 8px 15px;
+        font-size: 15px;
+    }
+    .chart-container {
+        width: 90vw;
+        margin-bottom: 1cm;
+    }
+    canvas{
+        width: 90vw;
+    }
+}
